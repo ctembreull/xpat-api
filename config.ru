@@ -1,4 +1,4 @@
-require 'rack-cors'
+require 'rack/cors'
 require 'guard-rack'
 require File.expand_path('../config/environment', __FILE__)
 
