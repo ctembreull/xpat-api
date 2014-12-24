@@ -11,6 +11,10 @@ require 'boot'
 Bundler.require :default, ENV['RACK_ENV']
 Dir[File.expand_path('../../api/**/*.rb', __FILE__)].each { |f| require f }
 Dir[File.expand_path('../../models/**/*.rb', __FILE__)].each { |f| require f }
+Dir[File.expand_path('../../app/helpers/*.rb', __FILE__)].each { |f| require f }
 
 require 'app'
 require 'api'
+
+# Configure Mongoid
+Mongoid.load!(Dir.pwd + '/config/mongoid.yml')

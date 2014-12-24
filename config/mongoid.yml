@@ -1,8 +1,6 @@
 development:
-  session:
+  sessions:
     default:
-      default: xpat_dev
+      database: xpat_dev
       hosts:
         - localhost:27017
-  options:
-    identity_map_enabled: true
