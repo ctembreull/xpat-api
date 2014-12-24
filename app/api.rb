@@ -8,6 +8,7 @@ module Xpat
     helpers do; end
 
     mount ::Xpat::Ping
+    mount ::Xpat::Resource::Team
 
   end
 end

@@ -11,6 +11,7 @@ gem 'grape-swagger', '~> 0.6.0'
 gem 'json',          '~> 1.8.0'
 gem 'bcrypt'
 gem 'hash-path'
+gem 'mongoid'
 
 # task runner
 gem 'rake',          '~> 10.0.3'
