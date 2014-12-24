@@ -23,9 +23,8 @@ task :environment do
   require File.expand_path('../config/environment', __FILE__)
 end
 
-# TODO: replace MyApp with your module setup
 task :routes => :environment do
-  MyApp::API.routes.each do |api|
+  Xpat::API.routes.each do |api|
     method = api.route_method.ljust(10)
     path = api.route_path
     puts "     #{method} #{path}"

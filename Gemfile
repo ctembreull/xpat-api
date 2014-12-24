@@ -16,9 +16,9 @@ gem 'hash-path'
 gem 'rake',          '~> 10.0.3'
 
 group :development do
-  gem 'guard',         '~> 1.6.1'
-  gem 'guard-bundler', '~> 1.0.0'
-  gem 'guard-rack',    '~> 1.2.2'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-rack'
   gem 'rubocop'
   gem 'pry'
   gem 'pry-doc'

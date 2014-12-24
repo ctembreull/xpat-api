@@ -12,5 +12,4 @@ use Rack::Cors do
   end
 end
 
-# TODO: Replace MyApp with your module structure
-run MyApp::App.instance
+run Xpat::App.instance

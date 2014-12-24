@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe MyApp::API do
+describe Xpat::API do
 
   def app
-    MyApp::API
+    Xpat::API
   end
 
-  describe MyApp::Ping do
+  describe Xpat::Ping do
     it 'goes ping' do
       get '/ping'
       expect(last_response.status).to eq(200)

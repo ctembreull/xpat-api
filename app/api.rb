@@ -1,4 +1,4 @@
-module MyApp
+module Xpat
   # Default mounting point for API methods
   class API < Grape::API
     format :json
@@ -7,7 +7,7 @@ module MyApp
     after do; end
     helpers do; end
 
-    mount ::MyApp::Ping
+    mount ::Xpat::Ping
 
   end
 end
